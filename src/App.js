@@ -6,7 +6,7 @@ import About from './About';
 import Category from './Category';
 import Home from './Home';
 import CatigoryDescription from './CatigoryDescription';
-
+import Error from './Error';
 
 
 function App() {
@@ -20,6 +20,7 @@ function App() {
                     <Route  path  ='/about' element= {<About/>} />
                     <Route   path  ='/cat' element= {<Category/>} />
                     <Route   path  ='/cat/:categoryName' element= {<CatigoryDescription/>} />
+                    <Route   path = '*' element = {<Error/>}> </Route>
 
                 </Routes>
 
